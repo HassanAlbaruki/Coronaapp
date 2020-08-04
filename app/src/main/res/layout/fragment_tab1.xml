@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tab1Fragment">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:visibility="visible"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today">
+
+        </TextView>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/affected_ger_ly"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_yellow"
+                android:layout_width="170dp"
+                android:layout_height="80dp"
+                >
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_margin="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Affected"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/affected_germany"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentBottom= "true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                </TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/deth_ger_ly"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_red"
+                android:layout_width="170dp"
+                android:layout_height="80dp"
+                >
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_margin="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Deths"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/deth_germany"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentBottom= "true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                </TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/rec_ger_ly"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_green"
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                >
+                <TextView
+
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:layout_margin="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recoverd"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/recoverd_germany"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentBottom= "true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                </TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/new_ca_ger_ly"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_blue"
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                >
+                <TextView
+
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:layout_margin="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Cases"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/newCases_ger"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentBottom= "true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                </TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/new_deth_ger_ly"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_purble"
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                >
+                <TextView
+
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:layout_margin="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Deths"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/newDeth_ger"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentBottom= "true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                </TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <com.github.mikephil.charting.charts.BarChart
+                android:paddingTop="10dp"
+                android:background="@drawable/bg_bar"
+                android:id="@+id/chart_ger"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </com.github.mikephil.charting.charts.BarChart>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ly_no_connection"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="219dp"
+            android:src="@drawable/no_connection">
+
+        </ImageView>
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:text="Whoops!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="No Internet Connection Found.\nCheck your connection or try again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <Button
+            android:background="@drawable/button"
+            android:id="@+id/retry"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="retry"
+            android:textColor="@color/white">
+
+        </Button>
+    </LinearLayout>
+</FrameLayout>
